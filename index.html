@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Hierarchy</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    
+    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+    <script src="js/mobiscroll.jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/mobiscroll-demo-icons.css">
+
+    <style type="text/css">
+
+    .demo-main-cont.demo-comp-listview { padding: 0; }
+    .demo-comp-listview .demo-note { margin: 10px; }
+    .md-country .mbsc-lv-img {
+        margin-top: -.6em;
+        width: 2em;
+    }
+    
+    .md-continent {
+        font-size: 36px;
+        position: absolute;
+        height: 1em;
+        width: 1em;
+        top: 50%;
+        margin-top: -.5em;
+        left: .42em;
+        text-align: center;
+    }
+    </style>
+
+</head>
+<body>
+
+<div mbsc-page class="demo-hierarchy">
+    <ul id="demo" style="display:none">
+        <li>
+             Computer Science Project 2
+            <ul>
+                <li>
+                     Abc Xyz
+                    <ul>
+                        <li>Xyz, Mr. Abc</li>
+						<li>email: abc@pace.edu<br>
+						Call <img src="images/call.png" style="max-width: 25px;
+    max-height: 25px;"/><br>
+						SMS<br></li>
+						
+                        
+                    </ul>
+                </li>
+                <li>
+                    Raj Carvalho
+                    <ul>
+                        <li>Carvalho, Mr. Raj</li>
+						<li>email: rc12555n@pace.edu<br>
+						Call <img src="images/call.png" style="max-width: 25px;
+    max-height: 25px;"/><br>
+						SMS<br></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+             Game Programming
+            <ul>
+                <li>
+                     Abc Xyz
+                    <ul>
+                        <li>Xyz, Mr. Abc</li>
+						<li>email: abc@pace.edu<br>
+						Call <img src="images/call.png" style="max-width: 25px;
+    max-height: 25px;"/><br>
+						SMS<br></li>
+						
+                        
+                    </ul>
+                </li>
+                <li>
+                    Raj Carvalho
+                    <ul>
+                        <li>Carvalho, Mr. Raj</li>
+						<li>email: rc12555n@pace.edu<br>
+						Call <img src="images/call.png" style="max-width: 25px;
+    max-height: 25px;"/><br>
+						SMS<br></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+		<li>
+             Mobile Innovation for Global
+            <ul>
+                <li>
+                     Abc Xyz
+                    <ul>
+                        <li>Xyz, Mr. Abc</li>
+						<li>email: abc@pace.edu<br>
+						Call <img src="images/call.png" style="max-width: 25px;
+    max-height: 25px;"/><br>
+						SMS<br></li>
+						
+                        
+                    </ul>
+                </li>
+                <li>
+                    Raj Carvalho
+                    <ul>
+                        <li>Carvalho, Mr. Raj</li>
+						<li>email: rc12555n@pace.edu<br>
+						Call <img src="images/call.png" style="max-width: 25px;
+    max-height: 25px;"/><br>	
+						SMS<br></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    mobiscroll.settings = {
+        theme: 'ios',
+        lang: 'en'
+    };
+
+    $(function () {
+    
+        // Mobiscroll Listview initialization
+        $('#demo').mobiscroll().listview({
+            theme: 'ios',       
+            lang: 'en',         
+            display: 'inline',  
+            swipe: false,       
+            enhance: true       
+        });
+    
+    });
+</script>
+
+</body>
+</html>
