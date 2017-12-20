@@ -1,152 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-    <title>Hierarchy</title>
-
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    
-    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
-    <script src="js/mobiscroll.jquery.min.js"></script>
-
-    <link rel="stylesheet" href="css/mobiscroll-demo-icons.css">
-
-    <style type="text/css">
-
-    .demo-main-cont.demo-comp-listview { padding: 0; }
-    .demo-comp-listview .demo-note { margin: 10px; }
-    .md-country .mbsc-lv-img {
-        margin-top: -.6em;
-        width: 2em;
-    }
-    
-    .md-continent {
-        font-size: 36px;
-        position: absolute;
-        height: 1em;
-        width: 1em;
-        top: 50%;
-        margin-top: -.5em;
-        left: .42em;
-        text-align: center;
-    }
-    </style>
-
+    <link rel="stylesheet" href="index.css">
+    <title>Class Collaborator</title>
 </head>
-<body>
-
-<div mbsc-page class="demo-hierarchy">
-    <ul id="demo" style="display:none">
-        <li>
-             Computer Science Project 2
-            <ul>
-                <li>
-                     Andhari Siddhesh
-                    <ul>
-                        <li>Andhari, Mr. Siddhesh</li>
-						<li>email: sa50291n@pace.edu<br>
-						Call <img src="images/call.png" style="max-width: 25px;
-    max-height: 25px; left: 59px;"/><br><br>
-						SMS<img src="images/sms icon.png" style="max-width: 20px;
-                        max-height: 25px;"/><br></li>
-                    </ul>
-                </li>
-                <li>
-                    Raj Carvalho
-                    <ul>
-                        <li>Carvalho, Mr. Raj</li>
-						<li>email: rc12555n@pace.edu<br>
-						Call <img src="images/call.png" style="max-width: 25px;
-    max-height: 25px; left: 59px;"/><br><br>
-						SMS<img src="images/sms icon.png" style="max-width: 20px;
-                        max-height: 25px;"/><br></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-             Game Programming
-            <ul>
-                <li>
-                     Andhari Siddhesh
-                    <ul>
-                        <li>Andhari, Mr. Siddhesh</li>
-						<li>email: sa50291n@pace.edu<br>
-						Call <img src="images/call.png" style="max-width: 25px;
-    max-height: 25px; left: 59px;"/><br><br>
-						SMS<img src="images/sms icon.png" style="max-width: 20px;
-                        max-height: 25px;"/><br></li>
-                    </ul>
-                </li>
-                <li>
-                    Raj Carvalho
-                    <ul>
-                        <li>Carvalho, Mr. Raj</li>
-						<li>email: rc12555n@pace.edu<br>
-						Call <img src="images/call.png" style="max-width: 25px;
-    max-height: 25px; left: 59px;"/><br><br>
-						SMS<img src="images/sms icon.png" style="max-width: 20px;
-                        max-height: 25px;"/><br></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-		<li>
-             Mobile Innovation for Global
-            <ul>
-                <li>
-                     Andhari Siddhesh
-                    <ul>
-                        <li>Andhari, Mr. Siddhesh</li>
-						<li>email: sa50291n@pace.edu<br>
-                        Call 
-                        <img src="images/call.png" style="max-width: 20px;
-                        max-height: 25px; left: 59px;"/><br><br>
-                        SMS<img src="images/sms icon.png" style="max-width: 20px;
-                        max-height: 25px;"/>
-                        <br>
-                        </li>
-						
-                    </ul>
-                </li>
-                <li>
-                    Raj Carvalho
-                    <ul>
-                        <li>Carvalho, Mr. Raj</li>
-						<li>email: rc12555n@pace.edu<br>
-						Call <img src="images/call.png" style="max-width: 20px;
-    max-height: 20px; left: 59px;"/><br><br>	
-						SMS<img src="images/sms icon.png" style="max-width: 20px;
-                        max-height: 25px;"/><br></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-<script>
-    mobiscroll.settings = {
-        theme: 'ios',
-        lang: 'en'
-    };
-
-    $(function () {
-    
-        // Mobiscroll Listview initialization
-        $('#demo').mobiscroll().listview({
-            theme: 'ios',       
-            lang: 'en',         
-            display: 'inline',  
-            swipe: false,       
-            enhance: true       
-        });
-    
-    });
-</script>
+<body class= "main">
+        <!-- style="max-width: 25px; max-height: 25px; left: 59px;" -->
+        <!-- <div class="image"></div> -->
+        <img class="image" src="images/study.jpg"/>
+    <div class="demo-hierarchy">
+        <div class= "title">Subjects</div>
+        <ul id="demo">
+            <li class= "subject_name">
+                 Computer Science Project 2
+                <ul class= "student_name">
+                    <li>
+                         Andhari Siddhesh
+                        <ul>
+                            <li>email: sa50291n@pace.edu<br>
+                            Call <img src="images/call1.png" style="max-width: 20px;
+        max-height: 20px; left: 59px;"/><br><br>
+                            SMS<img src="images/sms icon.png" style="max-width: 20px;
+                            max-height: 25px;"/><br></li>
+                        </ul>
+                    </li>
+                    <li>
+                            Carvalho Raj
+                        <ul>
+                            <li>email: rc12555n@pace.edu<br>
+                            Call <img src="images/call1.png" style="max-width: 20px;
+        max-height: 20px; left: 59px;"/><br><br>
+                            SMS<img src="images/sms icon.png" style="max-width: 20px;
+                            max-height: 25px;"/><br></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                 Game Programming
+                <ul>
+                    <li>
+                         Dabre Primus
+                        <ul>
+                            <li>email: dp10291n@pace.edu<br>
+                            Call <img src="images/call1.png" style="max-width: 20px;
+        max-height: 20px; left: 59px;"/><br><br>
+                            SMS<img src="images/sms icon.png" style="max-width: 20px;
+                            max-height: 25px;"/><br></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Upadhyay Anshul
+                        <ul>
+                            <li>email: au19555n@pace.edu<br>
+                            Call <img src="images/call1.png" style="max-width: 20px;
+        max-height: 20px; left: 59px;"/><br><br>
+                            SMS<img src="images/sms icon.png" style="max-width: 20px;
+                            max-height: 25px;"/><br></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                 Mobile Innovation for Global
+                <ul>
+                    <li>
+                         Ithape Aniket
+                        <ul>
+                            <li>email: ai34491n@pace.edu<br>
+                            Call 
+                            <img src="images/call1.png" style="max-width: 20px;
+                            max-height: 20px; left: 59px;"/><br><br>
+                            SMS<img src="images/sms icon.png" style="max-width: 20px;
+                            max-height: 25px;"/>
+                            <br>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        Deshmukh Sagar
+                        <ul>
+                            <li>email: sd13545n@pace.edu<br>
+                            Call <img src="images/call1.png" style="max-width: 20px;
+                            max-height: 20px; left: 59px;"/><br><br>	
+                            SMS<img src="images/sms icon.png" style="max-width: 20px;
+                            max-height: 25px;"/><br></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
 </body>
 </html>
+    
